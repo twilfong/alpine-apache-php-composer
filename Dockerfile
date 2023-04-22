@@ -18,4 +18,4 @@ RUN apk add --no-cache apache2 php81-apache2 php81-phar php81-mbstring php81-ope
 
 ADD docker-entrypoint.sh /
 HEALTHCHECK CMD wget -q --no-cache --spider localhost
-ENTRYPOINT ["/bin/sh /docker-entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/docker-entrypoint.sh"]
